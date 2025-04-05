@@ -15,18 +15,36 @@
     ```bash
     git clone https://github.com/your-repository/nmr_data_extractor.git
     ```
-2. Install the necessary dependencies:
+2. Navigate to the project folder:
     ```bash
-    npm install
+    cd nmr_data_extractor
     ```
-3. Run the application:
+3. Create a virtual environment (optional but recommended):
     ```bash
-    npm start
+    python -m venv venv
+    ```
+4. Activate the virtual environment:
+    - On Windows:
+      ```bash
+      venv\Scripts\activate
+      ```
+    - On macOS/Linux:
+      ```bash
+      source venv/bin/activate
+      ```
+5. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+6. Run the Flask application:
+    ```bash
+    flask run
     ```
 
 ## Usage
 
-For detailed instructions on how to use this project, please refer to the documentation.
+- Once the Flask app is running, you can interact with the project via the API or UI.
+- The backend processes NMR spectra images uploaded by the user and returns the extracted data for structure elucidation.
 
 ## Contributing
 
